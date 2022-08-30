@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+.card {
+  background-color: white;
+  border-radius: .4rem;
+  max-width: 20rem;
+  min-height: 14rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card::before {
+  position: absolute;
+  background-color: gray;
+  content: "";
+  height: .23rem;
+  width: 100%;
+  top: 0;
+}
+
+.card .card-body {
+  padding: 1.6rem;
+  box-sizing: border-box;
+}
+
+.card .card-body h2 {
+  color: #4c4e61;
+  font-size: 1.25rem;
+}
+
+.card .card-body p {
+  font-size: .85rem;
+  margin-top: .4rem;
+}
+
+.card .card-body img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1.6rem;
+  box-sizing: border-box;
+}
+
+.supervisor::before {
+  background-color: #45d3d3;
+}
+
+.team-builder::before {
+  background-color: #ea5353;
+}
+
+.karma::before {
+  background-color: #fcaf4a;
+}
+
+.calculator::before {
+  background-color: #549ef2;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background-color: #fafafa;
+  color: #a3a5ae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  width: 25rem;
+  margin: 4.5rem 0;
+}
+
+header > h1 {
+  color: #4c4e61;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.45;
+}
+
+header > h1 span {
+  font-weight: 600;
+}
+
+header > p {
+  text-align: center;
+  padding: 0 2.5rem;
+  margin-top: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+main .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+footer {
+  width: 20rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+.shadow, .card {
+  -webkit-box-shadow: 0px 13px 24px -4px rgba(67, 66, 162, 0.15);
+  box-shadow: 0px 13px 24px -4px rgba(67, 66, 162, 0.15);
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    padding: 0;
+  }
+  header {
+    width: 32rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  main {
+    flex-direction: row;
+    transform: scale(0.88);
+  }
+  footer {
+    width: 100%;
+    margin: 0;
+  }
+}
