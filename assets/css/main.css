@@ -10,7 +10,6 @@
 
 .card::before {
   position: absolute;
-  background-color: gray;
   content: "";
   height: .23rem;
   width: 100%;
